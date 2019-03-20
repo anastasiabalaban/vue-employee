@@ -1,6 +1,6 @@
 <template>
   <sui-grid-column :width="6">
-    <sui-form ten wide column @submit.prevent="onSubmit">
+    <sui-form @submit.prevent="onSubmit">
       <sui-form-field>
         <label>First Name:</label>
         <input placeholder="First Name" v-model="first_name" required>

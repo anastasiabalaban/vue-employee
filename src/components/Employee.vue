@@ -1,22 +1,31 @@
 <template>
-  <div>
-    <sui-card>
-      <sui-image :src="employee.avatar || defaultIcon" />
-      <sui-card-content>
-        <sui-card-header>{{employee.first_name}} {{employee.last_name}}</sui-card-header>
-        <sui-card-meta>Joined in 2019</sui-card-meta>
-        <sui-card-description>{{employee.position}}</sui-card-description>
-      </sui-card-content>
-      <sui-card-content extra>
-        <sui-icon name="user" />
-        22 Friends</sui-card-content>
-    </sui-card>
-  </div>
+  <sui-grid>
+    <sui-grid-row>
+      <EmployeeCard :employee="employee" :defaultIcon="defaultIcon"/>
+
+      <sui-grid-column :width="11">
+
+        <PositionLevel />
+
+        <EmployeeSkills />
+
+      </sui-grid-column>
+    </sui-grid-row>
+  </sui-grid>
 </template>
 
 <script>
+import EmployeeCard from './EmployeeCard'
+import PositionLevel from './PositionLevel'
+import EmployeeSkills from './EmployeeSkills'
+
 export default {
   name: 'Employee',
-  props: ['employee', 'defaultIcon']
+  components: {
+    EmployeeCard,
+    PositionLevel,
+    EmployeeSkills
+  },
+  props: ['employee', 'defaultIcon'],
 }
 </script>

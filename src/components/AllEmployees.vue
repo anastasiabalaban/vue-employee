@@ -48,7 +48,7 @@ export default {
         {
           id: 2,
           first_name: 'Ira',
-          last_name: 'Something',
+          last_name: 'Bahira',
           position: 'Recruiter',
           avatar: require('@/assets/user_icon_3.png')
         },
