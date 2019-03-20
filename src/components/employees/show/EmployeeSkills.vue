@@ -24,7 +24,10 @@ export default {
   name: 'EmployeeSkills',
   data() {
     return {
-      skills: [{ title: 'something' }],
+      skills: [
+        { title: 'something' },
+        { title: 'hop hey lalaley' }
+      ],
       skill: '',
     }
   },

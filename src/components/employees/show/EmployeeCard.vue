@@ -1,5 +1,5 @@
 <template>
-  <sui-grid-column :width="5">
+  <div>
     <sui-card class="fluid">
       <sui-image :src="employee.avatar || defaultIcon" />
       <sui-card-content>
@@ -14,7 +14,7 @@
     <a @click="$router.go(-1)">
       <sui-icon name="arrow alternate circle left outline" size="big" /> BACK
     </a>
-  </sui-grid-column>
+  </div>
 </template>
 
 <script>
