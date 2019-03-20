@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AllEmployees from './components/AllEmployees'
+import AllEmployees from './components/employees/index/AllEmployees'
 import About from './components/About'
-import Employee from './components/Employee'
+import Employee from './components/employees/show/Employee'
 import NotFound from './components/NotFound'
 
 Vue.use(Router)
