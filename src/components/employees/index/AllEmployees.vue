@@ -62,7 +62,7 @@ export default {
         {
           id: 4,
           first_name: 'John',
-          last_name: 'Niggga',
+          last_name: 'Curly',
           position: 'PM',
           avatar: require('@/assets/user_icon_13.png')
         }
